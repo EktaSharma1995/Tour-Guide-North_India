@@ -302,3 +302,7 @@ figcaption{
   opacity: 1;
   right: 0;
 }
+
+iframe{
+  margin-left: 1.5em;
+}

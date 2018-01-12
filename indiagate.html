@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Take A Tour</title>
+<link rel="stylesheet" href="indiagate.css" />
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="image_swap.js"></script>
+<script>
+        function expandImg(x) {
+         x.style.height = "280px";
+         x.style.width = "530px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "260px";
+            x.style.width = "510px";
+        }
+    </script>
+</head>
+<body>
+	<div>
+		<div class="top">
+			<a href="#"><img id="logo" src="images/logo.jpg"
+				alt="Take a tour logo" /></a>
+			<div class="bar-right">
+				<a href="#" class="bar-button">FAQs</a> <a href="ContactUs.html"
+					class="bar-button">CONTACT US</a> <a href="AboutUs.html"
+					class="bar-button">ABOUT US</a>
+			</div>
+		</div>
+		<div id="homepage">
+			<p style="font-weight: bold; font-size: 2.25em; text-orientation: center; color: #111113; 
+			margin-left: .5em; margin-top: 0.5em;">India Gate</p>
+
+			<!-- <div class="intropart"></div> -->
+				<section>
+		<!-- <h1>India Gate</h1> -->
+	    <ul id="image_list">
+	        <li><a href="images/a1.jpg" title="India-Gate: 1-1"> 
+	        	<img src="thumbnails/t1.jpg" alt="" style="height=90px; width:100px;"></a></li>
+	        <li><a href="images/a2.jpg" title="India-Gate: 1-2">
+	        	<img src="thumbnails/t2.jpg" alt="" style="height=90px; width:100px;"></a></li>
+	        <li><a href="images/a3.jpg" title="India-Gate: 1-3">
+	        	<img src="thumbnails/t3.jpg" alt="" style="height=90px; width:100px;"></a></li>
+	        <li><a href="images/a4.jpg" title="India-Gate: 1-4">
+	        	<img src="thumbnails/t4.jpg" alt="" style="height=90px; width:100px;"></a></li>
+	        <li><a href="images/a5.jpg" title="India-Gate: 1-5">
+	        	<img src="thumbnails/t5.jpg" alt="" style="height=90px; width:100px;"></a></li>
+	       </ul>       
+	    <p><img src="images/a1.jpg" alt="" id="image" style="height=400px; width:600px; margin-left: 5.5em; margin-top: 1.5em;"></p>
+	</section>	
+	<figure>
+            <div class="dropdown">
+              <button class="dropbtn">Restaurants</button>
+              <div class="dropdown-content">
+                <a href="#">Prabhu Chaat Bhandar</a>
+                <a href="#">Chor Bizarre</a>
+                <a href="#">Shikha Lovely Chuski</a>
+                <a href="#">Krishna Di Kulfi</a>
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="dropbtn">Shopping Places</button>
+              <div class="dropdown-content">
+                <a href="#">Janpath Market</a>
+                <a href="#">Palika Bazaar</a>
+                <a href="#">Khan Market</a>
+              </div>
+            </div>
+           
+            
+            <div class="dropdown">
+              <button class="dropbtn">Hotels</button>
+              <div class="dropdown-content">
+                <a href="#">The Lalit New Delhi</a>
+                <a href="#">Taj Mahal Hotel</a>
+                <a href="#">Shangri-La’s Eros Hotel</a>
+                <a href="#">Radisson Blu Plaza Delhi </a>
+              </div>
+            </div>
+           </figure>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
+
