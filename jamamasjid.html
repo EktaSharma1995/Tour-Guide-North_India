@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Take A Tour</title>
+  <link rel="stylesheet" href="jamamasjid.css" />
+  <script>
+    function expandImg(x) {
+      x.style.height = "280px";
+      x.style.width = "530px";
+    }
+
+    function normalImg(x) {
+      x.style.height = "260px";
+      x.style.width = "510px";
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <div class="top">
+      <a href="#"><img id="logo" src="images/logo.jpg"
+				alt="Take a tour logo" /></a>
+      <div class="bar-right">
+        <a href="#" class="bar-button">FAQs</a> <a href="ContactUs.html" class="bar-button">CONTACT US</a> <a href="AboutUs.html" class="bar-button">ABOUT US</a>
+      </div>
+    </div>
+    <div id="homepage">
+    	<div class="bar-left">
+				<a href="https://twitter.com"> <img title="Twitter"
+					alt="Twitter"
+					src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png"
+					width="35" height="35" />
+				</a> <a href="https://www.linkedin.com"> <img title="LinkedIn"
+					alt="LinkedIn"
+					src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png"
+					width="35" height="35" />
+				</a> <a href="https://www.facebook.com"> <img
+					title="Facebook" alt="Facebook"
+					src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"
+					width="35" height="35" />
+				</a> <a href="https://www.pinterest.ca"> <img title="Pinterest"
+					alt="Pinterest"
+					src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png"
+					width="35" height="35" />
+				</a>
+			</div>
+
+      <div class="popup" onclick="myFunction()">
+      <button class="dropbutton">Jama Masjid</button>
+      <span class="popuptext" id="myPopup">Jama Masjid (also spelled Jame Mosque, Jami Masjid, Jameh Mosque, Jamia Masjid or Jomeh Mosque) refers to the  main mosque of a town, city or village, and is usually the place of gathering for Eid prayers and Friday prayers. These are sometimes called Congregational mosques or Friday mosques. Many places come to  be known as a Jama Masjid as a proper name.</span>
+      </div>
+    </div>
+      <!-- <p style="font-weight: bold; font-size: 2.25em; text-orientation: center; color: red; padding-left: 0.5em;">Red Fort</p>
+ -->
+
+      <!-- <iframe
+				width="800" height="400" src="https://www.youtube.com/embed/L2zYNfbKGzs">
+			</iframe> -->
+      <div id="slide_show">
+        <a href="http://www.cnn.com"><img src="images/Jama_Masjid_In_the_Noon.jpg"
+				name="slideshow" id="slideshow" width="1000" height="500"></a>
+      </div>
+
+      <figure>
+            <div class="dropdown">
+              <button class="dropbtn">Restaurants</button>
+              <div class="dropdown-content">
+                <a href="#">Kuremal Mohan Lal Kulfi Wale</a>
+                <a href="#">Qureshi Kabab Corner</a>
+                <a href="#">Lakhori – Haveli Dharampura </a>
+                <a href="#">Cool Point Shahi Tukda</a>
+                <a href="#">Jung Bhadur Kachori Wala </a>
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="dropbtn">Shopping Places</button>
+              <div class="dropdown-content">
+                <a href="#">Dariba Kalan – The Silver lane</a>
+                <a href="#">Meena Bazaar</a>
+                <a href="#">Nai Sarak</a>
+                <a href="#">Bhagirath Palace – To Light up your home</a>
+                <a href="#">Sitaram Bazaar – Fashion Jewelry</a>
+                <a href="#">Kinari Bazaar – most colorful of Old Delhi Bazaars</a>
+              </div>
+            </div>
+           
+            
+            <div class="dropdown">
+              <button class="dropbtn">Hotels</button>
+              <div class="dropdown-content">
+                <a href="#">Hotel Tara Palace Chandni Chowk</a>
+                <a href="#">Welcome Heritage Haveli Dharampura</a>
+                <a href="#">Hotel Aiwan-e-Shahi</a>
+                <a href="#">Hotel Bombay Orient</a>
+                 <a href="#">Hotel Palace Heights</a>
+              </div>
+            </div>
+           </figure>
+
+          <script>
+            var myImagesArray = ["images/jmdelhi.jpg",
+              "images/tour_img.jpg", "images/Jama-Masjid.jpg",
+              "images/atnight.jpg", "images/jama-masjidp.jpg"];
+
+            var ImageNumber = 0;
+            var difference = myImagesArray.length - 1;
+
+            var delay = 1000; //milliseconds    1sec=1000milliseconds
+
+            setInterval("ChangeImages(-1)", delay);
+
+            function ChangeImages(direction) {
+              if (document.images) {
+                ImageNumber = ImageNumber + direction;
+
+                if (ImageNumber > difference) {
+                  ImageNumber = 0;
+                }
+
+                if (ImageNumber < 0) {
+                  ImageNumber = difference;
+                }
+                //document.slideshow.src = myImagesArray[ImageNumber];
+                document.getElementById('slideshow').src = myImagesArray[ImageNumber];
+
+              }
+            }
+          </script>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+</body>
+
+</html>

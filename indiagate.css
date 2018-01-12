@@ -2,7 +2,7 @@ html { height: 100%;}
 body{
     height: 100%;
     width: 100%;
-    background-image: url(images/steel.jpg);
+    background-image: url(images/inidia-independenceday.jpg);
     background-repeat:repeat;
     background-position: center;
     background-size: cover;
@@ -158,7 +158,7 @@ section{
   border-color: red;
   margin-left: 16.5em;
   /*margin-top: 2.5em;*/
-  background-image: url(images/backgroungindiagate.jpg);
+  background-image: url(images/simple-soft-yellow.jpg);
   background-repeat:repeat;
   background-position: center;
   background-size: cover;
@@ -173,7 +173,79 @@ figure{
     margin-top: 1%;
     margin-left: 4.5em;
 }
-/*#homepage {
-  margin-left: 17.5em;
-  margin-top: 9.5em;
-}*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 80px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: white;
+    background-image: url(images/steel.jpg);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    right: -180%;
+    /*margin-left: -80px;*/
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+span#myPopup.popuptext.show{
+  width: 241px;
+    text-align: justify;
+    margin-left: 3.5em;
+    margin-right: -1.5em;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.dropbutton {
+    background-color: #00BCD4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 175px;
+    margin-top: 1.5em;
+}

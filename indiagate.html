@@ -31,9 +31,33 @@
 			</div>
 		</div>
 		<div id="homepage">
-			<p style="font-weight: bold; font-size: 2.25em; text-orientation: center; color: #111113; 
-			margin-left: .5em; margin-top: 0.5em;">India Gate</p>
+      <div class="bar-left">
+        <a href="https://twitter.com"> <img title="Twitter"
+          alt="Twitter"
+          src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png"
+          width="35" height="35" />
+        </a> <a href="https://www.linkedin.com"> <img title="LinkedIn"
+          alt="LinkedIn"
+          src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png"
+          width="35" height="35" />
+        </a> <a href="https://www.facebook.com"> <img
+          title="Facebook" alt="Facebook"
+          src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"
+          width="35" height="35" />
+        </a> <a href="https://www.pinterest.ca"> <img title="Pinterest"
+          alt="Pinterest"
+          src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png"
+          width="35" height="35" />
+        </a>
+      </div>
+			<!-- <p style="font-weight: bold; font-size: 2.25em; text-orientation: center; color: #111113; 
+			margin-left: .5em; margin-top: 0.5em;">India Gate</p> -->
 
+       <div class="popup" onclick="myFunction()">
+      <button class="dropbutton">India Gate</button>
+      <span class="popuptext" id="myPopup">Situated on the celebrated Rajpath in New Delhi, India Gate, originally known as   the All India War Memorial, is a famous monument built as a mark of respect towards the Indian soldiers killed during World War I and the Afghan Wars. Constructed during the times of British Raj in India, the foundation stone of the structure was laid on 10 February 1921 by the duke of Connaught and was completed in the year 1931. The names of hundreds of soldiers can be seen inscribed on its giant walls while the Amar Jawan Jyoti or the flame of the immortal warrior lights underneath, burning constantly since the year 1971.</span>
+      </div>
+    </div>
 			<!-- <div class="intropart"></div> -->
 				<section>
 		<!-- <h1>India Gate</h1> -->
@@ -85,6 +109,13 @@
 		</div>
 
 	</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 
 
 </body>

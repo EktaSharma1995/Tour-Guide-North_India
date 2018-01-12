@@ -48,8 +48,14 @@
 					width="35" height="35" />
 				</a>
 			</div>
-      <p style="font-weight: bold; font-size: 2.25em; text-orientation: center; color: red; padding-left: 0.5em;">Red Fort</p>
 
+      <div class="popup" onclick="myFunction()">
+      <button class="dropbutton">Red Fort</button>
+      <span class="popuptext" id="myPopup">Red Fort is an articulate souvenir of the glory of the Mughal regime that leaves the visitor wander struck. It is a tranquil paradise of amity that takes the visitor to another domain of existence</span>
+      </div>
+    </div>
+      <!-- <p style="font-weight: bold; font-size: 2.25em; text-orientation: center; color: red; padding-left: 0.5em;">Red Fort</p>
+ -->
 
       <!-- <iframe
 				width="800" height="400" src="https://www.youtube.com/embed/L2zYNfbKGzs">
@@ -123,6 +129,13 @@
             }
           </script>
 
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 
 </body>
 
